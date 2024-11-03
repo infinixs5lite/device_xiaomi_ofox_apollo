@@ -1,13 +1,13 @@
 #
-#	This file is part of the OrangeFox Recovery Project
-# 	Copyright (C) 2021-2023 The OrangeFox Recovery Project
+#	This file is part of the Pitchblack Recovery Project
+# 	Copyright (C) 2021-2023 The Pitchblack Recovery Project
 #
-#	OrangeFox is free software: you can redistribute it and/or modify
+#	Pitchblack is free software: you can redistribute it and/or modify
 #	it under the terms of the GNU General Public License as published by
 #	the Free Software Foundation, either version 3 of the License, or
 #	any later version.
 #
-#	OrangeFox is distributed in the hope that it will be useful,
+#	Pitchblack is distributed in the hope that it will be useful,
 #	but WITHOUT ANY WARRANTY; without even the implied warranty of
 #	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #	GNU General Public License for more details.
@@ -25,7 +25,7 @@ OF_PATCH_AVB20 := 1
 # PBRP specific build flags
 PB_DISABLE_DEFAULT_DM_VERITY := true
 PB_DISABLE_DEFAULT_TREBLE_COMP := true
-PB_MAINTAINER := dogpoopy
+PB_MAINTAINER := kelvin
 PB_VERSION := $(date +%y.%m.%d)
 
 # try to prevent potential data format errors
