@@ -18,38 +18,15 @@
 # 	Please maintain this if you use this script or any part of it
 #
 
-# OrangeFox-specific settings
-OF_USE_GREEN_LED := 0
-OF_IGNORE_LOGICAL_MOUNT_ERRORS := 1
-OF_DONT_PATCH_ENCRYPTED_DEVICE := 1
-OF_NO_TREBLE_COMPATIBILITY_CHECK := 1
-OF_NO_MIUI_PATCH_WARNING := 1
-OF_MAINTAINER := dogpoopy
-FOX_VERSION := $(date +%y.%m.%d)
-
-OF_ENABLE_LPTOOLS := 1
-OF_QUICK_BACKUP_LIST := /boot;/data;
 
 # avb 2.0
 OF_PATCH_AVB20 := 1
 
-# OTA
-OF_KEEP_DM_VERITY := 1
-OF_SUPPORT_ALL_BLOCK_OTA_UPDATES := 1
-OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR := 1
-OF_DISABLE_MIUI_OTA_BY_DEFAULT := 1
+# PBRP specific build flags
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
+PB_MAINTAINER := dogpoopy
+PB_VERSION := $(date +%y.%m.%d)
 
 # try to prevent potential data format errors
-OF_UNBIND_SDCARD_F2FS := 1
-
-# maximum permissible splash image size (in kilobytes); do *NOT* increase!
-OF_SPLASH_MAX_SIZE := 130
-
-# screen settings
-OF_SCREEN_H := 2400
-OF_STATUS_H := 100
-OF_STATUS_INDENT_LEFT := 120
-OF_STATUS_INDENT_RIGHT := 48
-OF_HIDE_NOTCH := 1
-OF_CLOCK_POS := 1
-#
+PB_UNBIND_SDCARD_F2FS := 1
