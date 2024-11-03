@@ -16,6 +16,8 @@
 # limitations under the License.
 #
 
+DEVICE_PATH := device/xiaomi/apollo
+
 # fscrypt policy
 TW_USE_FSCRYPT_POLICY := 2
 
