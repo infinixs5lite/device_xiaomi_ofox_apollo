@@ -124,6 +124,13 @@ BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 TW_INCLUDE_PYTHON := true
 
+# PBRP specific build flags
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
+
+# PB Torch
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
+
 # frame rate
 TW_FRAMERATE := 90
 #
