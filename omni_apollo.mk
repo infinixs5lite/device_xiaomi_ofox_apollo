@@ -22,15 +22,15 @@ DEVICE_PATH := device/xiaomi/$(PRODUCT_RELEASE_NAME)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
-# Inherit any OrangeFox-specific settings
-$(call inherit-product-if-exists, $(DEVICE_PATH)/fox_apollo.mk)
+# Inherit any pb-specific settings
+$(call inherit-product-if-exists, $(DEVICE_PATH)/pb_apollo.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
-PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
+PRODUCT_NAME := omni_$(PRODUCT_RELEASE_NAME)
 PRODUCT_BRAND := Mi
 PRODUCT_MODEL := M2007J3SY
 PRODUCT_MANUFACTURER := Xiaomi
